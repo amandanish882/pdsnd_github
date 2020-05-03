@@ -5,7 +5,7 @@ import numpy as np
 import calendar
 import time
 
-os.chdir('C:/Users/lenovo/Python learn/Python Data Science NanodegreeProject/udacity_python_bikeshare_project-master/')
+#os.chdir('C:/Users/lenovo/Python learn/Python Data Science NanodegreeProject/udacity_python_bikeshare_project-master/')
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
