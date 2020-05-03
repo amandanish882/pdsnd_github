@@ -204,7 +204,10 @@ def view_data(df):
     prompt = input('\nWant to see 5 lines of raw data? Enter yes or no.\n').lower()
     while prompt == 'yes':
         it_val = next(iterator)
-        print(df.iloc[it_val:it_val+5,:])
+        if len(df) - it_val < 5:
+            print(df.iloc[it_val:len(df),:])
+        else:
+            print(df.iloc[it_val:it_val+5,:])
         prompt = input('\nWant to see more 5 lines of raw data? Enter yes or no.\n').lower()
     
     
